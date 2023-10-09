@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+     <header>
+        <nav class="navbar container">
+            <a href="#">
+                <img src="logonews.png" alt="">
+            </a>
+            <div class="navlinks">
+                <ul class="nav-main  flex">
+                    <li class="nav-item link" id="ipl" onclick="onNavItemClick('ipl')">IPL</li>
+                    <li class="nav-item link" id="finance" onclick="onNavItemClick('finance')">Finance</li>
+                    <li class="nav-item link" id="politics" onclick="onNavItemClick('politics')">Politics</li>
+                </ul>
+            </div>
+            <div class="search-bar">
+                <input type="text" name="search" id="search" placeholder="eg usa">
+                <button onclick="onSearchBtnClick()">search</button>
+            </div>
+        </nav>
+     </header>
+     <main>
+            <div class="card-container container flex">
+                
+            </div>
+     </main>
+     <footer>
+
+     </footer>
+     <template id="template-news-card">
+        <div class="card">
+            <div class="card-header">
+                <img id="news-img" src="https://via.placeholder.com/400x200" alt="">
+            </div>
+            <div class="card-content">
+                <h3 id="news-title">Some title here</h3>
+                <h6 class="news-source" id="news-source">sub heading</h6>
+                <p class="news-desc" id="news-desc">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, rerum obcaecati officiis ducimus, error veritatis tempora in dolorum asperiores voluptates nemo at aperiam deserunt vitae quo eveniet? Quos, provident eligendi!
+                </p>
+            </div>
+        </div>
+        
+     </template>
+     <script src="script.js"></script>
+</body>
+</html>
